@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+}
+
+/* Header */
+.container {
+    max-width: 1172px;
+    margin: 0 auto;
+}
+
+.top-menu {
+    border: 1px solid rgba(42, 47, 55, 0.12);
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    justify-content: space-between; /* раскидывает дивы по краям*/
+}
+
+.left-menu {
+    display: flex;
+    align-items: center;
+    gap: 313px;
+}
+
+.right-menu {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+}
+
+.advertisement {
+    display: flex;
+    align-items: center; /*по вертикали*/
+    justify-content: center; /*по горизонтали*/
+    width: 216px;
+    height: 40px;
+    background-color: #1E3DAF; 
+}
+
+.btn-advertisement {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.advertisement:hover{
+    background-color: #061858;
+}
+
+/* Нижний header */
+
+.botomm-menu {
+    height: 504px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botoom-header-left {
+    width: 464px;
+    display: grid;
+    gap: 40px;
+}
+
+.botoom-header-left h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 56px;
+    color: #2A2F37;
+}
+
+.botoom-header-left p{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A2F37;
+    opacity: 0.8;
+}
+
+.botoom-header-left input {
+    width: 464px;
+    height: 48px;
+    background: rgba(42, 47, 55, 0.02);
+    background-image: url(/img/header/search.svg);
+    
+    background-repeat: no-repeat;
+    background-position: center right 16px;
+    border: 1px solid rgba(42, 47, 55, 0.08)
+}
+
+.botoom-header-left input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #2A2F37;
+    opacity: 0.4;
+    padding-left: 16px;
+}
+
+.botoom-header-left input::background-image {
+    color: #2A2F37;
+}
+
+/* Основная часть */
+
+.main-external {
+    background: #F5F5F5;
+    height: 1904px;
+}
+
+.main-nav {
+    padding-top: 40px;
+    display:flex;
+    /* height: 160px; */
+    justify-content:flex-start;
+    gap: 40px;
+    align-items: center;
+}
+
+.m-nav{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #2A2F37;
+}
+
+.item-1 {
+    width: 107px;
+    height: 40px;
+    color: #FFFFFF;
+    background: #1E3DAF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-2 {
+    width: 161px;
+    height: 40px;
+    background: rgba(42, 47, 55, 0.06);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Лента */
+
+.main-tape {
+    padding-top: 80px;
+}
+
+.main-tape h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #2A2F37;
+}
+
+
+/* 1 блок */
+
+.container-tape {
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-row-gap:48px;
+    grid-column-gap:40px;
+    padding-top: 32px;
+}
+.cont-tape {
+    width: 363px;
+    background: #FFFFFF;
+}
+
+.url-tape{
+    background-image:url(../img/main/city.png);
+    background-repeat: no-repeat;
+    height: 200px;
+
+    padding-left: 16px;
+    padding-top: 152px;
+}
+
+.bx-1 {
+    background-image:url(../img/main/headphones.png);
+}
+
+.bx-4 {
+    background-image:url(../img/main/headphones.png);
+}
+
+.bx-7 {
+    background-image:url(../img/main/headphones.png);
+}
+
+
+.url-tape a{
+    width: 78px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #FFFFFF;
+    background: #1E3DAF;
+    
+    text-decoration: none;
+}
+
+.url-tape a:hover {
+    background-color: #061858;
+}
+
+.text-tape {
+    height: 248px;
+    
+}
+
+.text-tape-center {
+    padding: 24px 24px;
+}
+
+.text-tape-center h5{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #1E3DAF;
+}
+
+.description-tape{
+    padding-top: 16px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    font-feature-settings: 'pnum' on, 'lnum' on;
+    color: #2A2F37;
+    opacity: 0.8;
+}
+
+.price-tape {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    color: #2A2F37;
+    padding-top: 40px;
+    text-align: right;
+}
+
+.date-watch {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2A2F37;
+    opacity: 0.4;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.eye-wach {
+    display: flex;
+    gap: 9px;
+}
+
+.eye-wach p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #2A2F37;
+    opacity: 0.4;
+}
+
+/* Кнопка */
+
+.btn-tape {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+
+    background: #F5F5F5;
+}
+
+.btn-tape button{
+    width: 242px;
+    height: 48px;
+    border: 1px solid #2A2F37;
+    color: #2A2F37;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+}
+
+.btn-tape button:hover {
+    background-color: #1E3DAF;
+    color: white;
+}
+
+/* Подвал */
+
+footer {
+    background-color: #2A2F37;
+}
+
+.footer-logo-url {
+    padding-top: 48px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.logo-text p{
+    width: 247px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+
+.footer-url {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 64px;
+}
+
+.footer-nav a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.line-footer {
+    padding-top: 48px;
+}
+
+.footer-documentation {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0 48px;
+}
+
+.footer-documentation p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
